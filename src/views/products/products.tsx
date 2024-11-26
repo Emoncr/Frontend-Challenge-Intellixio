@@ -12,6 +12,8 @@ import { useRouter, useSearchParams } from "next/navigation";
 
 export const Products: React.FC = () => {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+
+  
   const router = useRouter();
   const searchParams = useSearchParams();
 

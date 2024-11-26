@@ -1,14 +1,12 @@
 "use client";
 
 import { BackToHome } from "@/components/backToHome/backToHome";
-import { useUserAgentContext } from "@/components/providers/userAgentProvider";
 
 type UserAgentProps = {
   userAgentData: string;
 };
 
 export const UserAgent = ({ userAgentData }: UserAgentProps) => {
-  // const { userAgent } = useUserAgentContext();
 
   return (
     <div>
@@ -25,7 +23,7 @@ export const UserAgent = ({ userAgentData }: UserAgentProps) => {
 
       {!userAgentData && <div>No user agent</div>}
     </div>
-  );
+  ); 
 };
 
 export default UserAgent;
